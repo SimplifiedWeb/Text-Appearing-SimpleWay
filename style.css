@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(rgb(250, 222, 68),rgb(255, 236, 131));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.imgcontainer{
+    width:450px;
+    height: 450px;
+    overflow: hidden;
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    transform: translate(-40%,-15%);
+    /* border-radius: ; */
+}
+
+.imgcontainer img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.rigtside{
+    position: absolute;
+    top: 37%;
+    right: 5%;
+    box-shadow: 2px 2px 5px black;
+    width: 900px;
+    height: 200px;
+    transition: width 0.5s, height 0.6s;
+    overflow: hidden;
+}
+
+.rigtside:hover{
+    width: 950px;
+    height: 350px;
+    box-shadow: 2px 2px 30px white;
+    /* text-overflow: ellipsis; */
+
+}
+.mainheading{
+    padding: 20px;
+    /* margin: auto; */
+    text-align: center;
+    background: rgb(141, 245, 247);
+}
+.mainheading h1{
+    font-size: 40px;
+    color: rgb(239, 221, 81);
+}
+.innercontainer h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    text-shadow: 2px 2px white;
+    font-family: cursive;
+}
+.text{
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    text-align: left;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    .imgcontainer{
+        width: 100%;
+        margin-top: -45%;
+    }
+    .imgcontainer img{
+        width: 62%;
+        margin-left: 34%;
+    }
+    .rigtside{
+        width: 86%;
+        height: auto;
+    }
+    .innercontainer h1{
+        text-align: center;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .text{
+        width: 50%;
+        margin: auto;
+        font-size: 16px;
+        text-align: left;
+    }
+    .rigtside:hover{
+        width: 86%;
+    }
+}
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    .imgcontainer{
+        width: 100%;
+        margin-top: -45%;
+    }
+    .imgcontainer img{
+        width: 62%;
+        margin-left: 34%;
+    }
+    .rigtside{
+        width: 86%;
+        height: auto;
+    }
+    .innercontainer h1{
+        text-align: center;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .text{
+        width: 50%;
+        margin: auto;
+        font-size: 16px;
+        text-align: left;
+    }
+    .rigtside:hover{
+        width: 86%;
+    }
+}
